@@ -10,8 +10,9 @@ title: "fred belotte"
       <h2 class="subtitle is-3">{{ 'frontend developer' | downcase }}</h2>
 
       <div class="tags">
-        <span class="tag is-medium is-rounded">JavaScript</span>
-        <span class="tag is-medium is-rounded">Node.js</span>
+        {% for item in site.data.stack %}
+        <span class="tag is-medium is-rounded">{{ item }}</span>
+        {% endfor %}
       </div>
     </div>
   </div>
