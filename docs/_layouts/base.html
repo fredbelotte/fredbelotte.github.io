@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-    <title>{{ page.title }}</title>
+    <title>fred belotte &Colon; {{ page.title | downcase }}</title>
 
     <link href="/assets/css/style.css" rel="stylesheet" />
   </head>
@@ -13,7 +13,7 @@
   <body>
     {% include site_header.html %}
 
-    <main>{{ content }}</main>
+    <main class="hero is-dark is-fullheight-with-navbar">{{ content }}</main>
 
     {% include site_footer.html %}
   </body>

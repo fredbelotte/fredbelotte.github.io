@@ -1,19 +1,17 @@
 ---
 layout: base
-title: "fred belotte"
+title: "home"
 ---
 
-<section class="hero is-dark is-fullheight-with-navbar">
-  <div class="hero-body">
-    <div>
-      <h1 class="title is-1">{{ 'fred belotte' | downcase }}</h1>
-      <h2 class="subtitle is-3">{{ 'frontend developer' | downcase }}</h2>
+<section class="hero-body">
+  <div>
+    <h1 class="title is-1">{{ 'fred belotte' | downcase }}</h1>
+    <h2 class="subtitle is-3">{{ 'frontend developer' | downcase }}</h2>
 
-      <div class="tags">
-        {% for item in site.data.stack %}
-        <span class="tag is-medium is-rounded">{{ item }}</span>
-        {% endfor %}
-      </div>
+    <div class="tags">
+      {% for item in site.data.stack %}
+      <span class="tag is-medium is-rounded">{{ item }}</span>
+      {% endfor %}
     </div>
   </div>
 </section>
