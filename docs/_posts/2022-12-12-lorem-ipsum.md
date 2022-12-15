@@ -1,6 +1,4 @@
 ---
-author: "fred belotte"
-layout: post
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non felis vitae felis ornare interdum a at nunc. Nulla sit amet quam nec justo cursus blandit vitae sit amet nisl. Phasellus convallis nec purus vitae tempus. Pellentesque vestibulum urna sem, ultricies dictum erat eleifend laoreet. Etiam vel quam tincidunt, hendrerit ante ac, lobortis lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id ex tellus. Cras ornare sagittis tincidunt.

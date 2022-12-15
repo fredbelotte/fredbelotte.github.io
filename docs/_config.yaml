@@ -2,3 +2,15 @@ collections:
   pages:
     output: true
     permalink: /:name
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author: "fred belotte"
+      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: base
