@@ -1,8 +1,3 @@
-collections:
-  pages:
-    output: true
-    permalink: /:name
-
 defaults:
   - scope:
       path: ""
@@ -14,3 +9,8 @@ defaults:
       path: ""
     values:
       layout: base
+
+plugins:
+  - jekyll-sitemap
+
+source: src
