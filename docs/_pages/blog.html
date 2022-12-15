@@ -12,11 +12,9 @@ title: blog
       <div class="control">
         <div class="tags are-medium are-rounded has-addons">
           <span class="tag is-black is-rounded"
-            >{{ post.date | date: "%Y" }}</span
+            >{{ post.date | date: "%d %B %Y" }}</span
           >
-          <a class="tag is-rounded" href="{{ post.url }}"
-            >{{ post.date | date: "%d %B" }}</a
-          >
+          <a class="tag is-rounded" href="{{ post.url }}">{{ post.title }}</a>
         </div>
       </div>
       {% endfor %}
