@@ -8,7 +8,7 @@
 | -------- | ------------ | ---------- | ---------- |
 | Git      | Node.js      | Express    | CSS        |
 | GitHub   |              | Jest       | HTML       |
-| VS Code  |              |            | JavaScript |
+| VS Code  |              | Tap        | JavaScript |
 |          |              |            | Markdown   |
 
 ## experience
@@ -30,6 +30,6 @@
 [MIT License][license]
 
 [github]: https://github.com/fredbelotte
-[license]: https://github.com/fredbelotte/fredbelotte.github.io
+[license]: https://github.com/fredbelotte/fredbelotte.github.io/blob/main/LICENSE
 [linkedin]: https://www.linkedin.com/in/fredbelotte
 [twitter]: https://twitter.com/fredbelotte
