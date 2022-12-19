@@ -9,11 +9,15 @@ and this project adheres to [Semantic Versioning][semver].
 
 ### added
 
+- configure the repository static website
+
 ### changed
 
 ### deprecated
 
 ### fixed
+
+- fix jekyll configuration for github pages
 
 ### removed
 
