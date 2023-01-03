@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning][semver].
 
 ### changed
 
+- change the repository static website
+
 ### deprecated
 
 ### fixed

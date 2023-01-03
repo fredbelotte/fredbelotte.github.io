@@ -1,9 +1,9 @@
 <footer class="footer">
   <nav class="level">
     <div class="level-item">
-      <div class="buttons is-ghost">
+      <div class="buttons">
         {% for item in site.data.sitemap %}
-        <a href="{{ item.href }}" class="button is-ghost">{{ item.text }}</a>
+        <a href="{{ item.url }}" class="button is-ghost">{{ item.text }}</a>
         {% endfor %}
       </div>
     </div>

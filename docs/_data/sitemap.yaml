@@ -1,4 +1,4 @@
-- href: /
-  text: home
-- href: /blog
-  text: blog
+- text: index
+  url: /
+- text: blog
+  url: /blog

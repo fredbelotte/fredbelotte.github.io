@@ -1,6 +1,6 @@
-- href: https://github.com/fredbelotte
-  text: GitHub
-- href: https://www.linkedin.com/in/fredbelotte
-  text: LinkedIn
-- href: https://twitter.com/fredbelotte
-  text: Twitter
+- text: GitHub
+  url: https://github.com/fredbelotte
+- text: LinkedIn
+  url: https://www.linkedin.com/in/fredbelotte
+- text: Twitter
+  url: https://twitter.com/fredbelotte
