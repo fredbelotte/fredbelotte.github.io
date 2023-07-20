@@ -1,5 +1,9 @@
 # gitignore
 
+# .NET Core
+bin/
+obj/
+
 # macOS
 .DS_Store
 
