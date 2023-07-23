@@ -1,0 +1,16 @@
+{
+  "license": "MIT",
+  "main": "main.js",
+  "name": "@fredbelotte/service",
+  "private": "true",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "fastify start --log-level=info --pretty-logs main.js"
+  },
+  "dependencies": {
+    "@fastify/autoload": "^5.7.1",
+    "fastify": "^4.20.0",
+    "fastify-cli": "^5.7.1"
+  }
+}
