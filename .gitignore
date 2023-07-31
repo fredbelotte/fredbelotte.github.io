@@ -7,6 +7,9 @@ obj/
 ## macOS
 .DS_Store
 
+## Next.js
+.next/
+
 ## Node.js
 node_modules/
 
