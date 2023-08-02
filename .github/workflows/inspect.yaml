@@ -1,0 +1,28 @@
+jobs:
+  build_dotnet:
+    name: build_dotnet
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+  build_node:
+    name: build_node
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+  build_react:
+    name: build_react
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+name: inspect
+
+on:
+  pull_request:
+    branches:
+      - main
