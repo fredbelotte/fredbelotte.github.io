@@ -28,6 +28,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           cache: npm
+          cache-dependency-path: node/service
           node-version: ${{ matrix.node }}
       - name: install
         run: npm clean-install
@@ -48,6 +49,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           cache: npm
+          cache-dependency-path: node/service
           node-version: ${{ matrix.node }}
       - name: install
         run: npm clean-install
