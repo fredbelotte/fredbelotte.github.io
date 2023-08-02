@@ -11,9 +11,12 @@ jobs:
       - name: configure
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-verion: 7
+          dotnet-version: ${{ matrix.dotnet }}
       - name: build
         run: dotnet build
+    strategy:
+      matrix:
+        dotnet: [7]
 
   build_node:
     defaults:
