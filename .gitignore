@@ -1,4 +1,18 @@
 # gitignore
 
-# macOS
+## .NET Core
+bin/
+obj/
+
+## macOS
 .DS_Store
+
+## Next.js
+.next/
+
+## Node.js
+node_modules/
+
+## Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
