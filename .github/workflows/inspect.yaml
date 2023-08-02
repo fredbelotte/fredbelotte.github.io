@@ -1,24 +1,39 @@
 jobs:
   build_dotnet:
+    defaults:
+      run:
+        working-directory: dotnet/service
     name: build_dotnet
     runs-on: ubuntu-22.04
     steps:
       - name: checkout
         uses: actions/checkout@v3
+      - name: build
+        run: dotnet build
 
   build_node:
+    defaults:
+      run:
+        working-directory: node/service
     name: build_node
     runs-on: ubuntu-22.04
     steps:
       - name: checkout
         uses: actions/checkout@v3
+      - name: install
+        run: npm clean-install
 
   build_react:
+    defaults:
+      run:
+        working-directory: react/interface
     name: build_react
     runs-on: ubuntu-22.04
     steps:
       - name: checkout
         uses: actions/checkout@v3
+      - name: install
+        run: npm clean-install
 
 name: inspect
 
