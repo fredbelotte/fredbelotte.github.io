@@ -1,0 +1,74 @@
+jobs:
+  build_dotnet:
+    defaults:
+      run:
+        working-directory: dotnet/service
+    env:
+      NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
+    name: build dotnet
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: configure
+        uses: actions/setup-dotnet@v3
+        with:
+          cache: false
+          cache-dependency-path: dotnet/service
+          dotnet-version: ${{ matrix.dotnet }}
+      - name: build
+        run: |
+          dotnet restore --locked-mode
+          dotnet build --no-restore
+    strategy:
+      matrix:
+        dotnet: [7]
+
+  build_node:
+    defaults:
+      run:
+        working-directory: node/service
+    name: build node
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: configure
+        uses: actions/setup-node@v3
+        with:
+          cache: npm
+          cache-dependency-path: node/service
+          node-version: ${{ matrix.node }}
+      - name: install
+        run: npm clean-install
+    strategy:
+      matrix:
+        node: [20]
+
+  build_react:
+    defaults:
+      run:
+        working-directory: react/interface
+    name: build react
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: configure
+        uses: actions/setup-node@v3
+        with:
+          cache: npm
+          cache-dependency-path: node/service
+          node-version: ${{ matrix.node }}
+      - name: install
+        run: npm clean-install
+    strategy:
+      matrix:
+        node: [20]
+
+name: inspect
+
+on:
+  pull_request:
+    branches:
+      - main

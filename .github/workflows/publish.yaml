@@ -1,0 +1,45 @@
+jobs:
+  pack_dotnet:
+    defaults:
+      run:
+        working-directory: dotnet/service
+    name: pack dotnet
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup qemu
+        uses: actions/setup-qemu-action@v2
+      - name: setup buildx
+        uses: actions/setup-buildx-action@v2
+
+  pack_node:
+    defaults:
+      run:
+        working-directory: node/service
+    name: pack node
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup qemu
+        uses: actions/setup-qemu-action@v2
+      - name: setup buildx
+        uses: actions/setup-buildx-action@v2
+
+  pack_react:
+    defaults:
+      run:
+        working-directory: react/interface
+    name: pack react
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+name: publish
+
+on:
+  push:
+    branches:
+      - main

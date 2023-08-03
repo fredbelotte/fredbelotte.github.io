@@ -1,0 +1,39 @@
+jobs:
+  deploy_dotnet:
+    defaults:
+      run:
+        working-directory: dotnet/service
+    name: deploy dotnet
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+  deploy_node:
+    defaults:
+      run:
+        working-directory: node/service
+    name: deploy node
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+  deploy_react:
+    defaults:
+      run:
+        working-directory: react/interface
+    name: deploy react
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+name: release
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 0.*
