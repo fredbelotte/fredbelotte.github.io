@@ -3,6 +3,8 @@ jobs:
     defaults:
       run:
         working-directory: dotnet/service
+    env:
+      NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
     name: build_dotnet
     runs-on: ubuntu-22.04
     steps:
@@ -11,7 +13,7 @@ jobs:
       - name: configure
         uses: actions/setup-dotnet@v3
         with:
-          cache: true
+          cache: false
           cache-dependency-path: dotnet/service
           dotnet-version: ${{ matrix.dotnet }}
       - name: build
