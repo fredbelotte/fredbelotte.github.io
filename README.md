@@ -6,4 +6,4 @@
 
 [MIT License][license]
 
-[license]: https://github.com/fredbelotte/fredbelotte.github.io
+[license]: https://github.com/fredbelotte/fredbelotte.github.io/blob/main/LICENSE
