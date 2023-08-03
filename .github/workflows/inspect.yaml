@@ -12,9 +12,12 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           cache: true
+          cache-dependency-path: dotnet/service
           dotnet-version: ${{ matrix.dotnet }}
       - name: build
-        run: dotnet build
+        run: |
+          dotnet restore --locked-mode
+          dotnet build --no-restore
     strategy:
       matrix:
         dotnet: [7]
