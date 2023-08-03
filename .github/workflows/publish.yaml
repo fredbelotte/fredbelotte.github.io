@@ -27,11 +27,11 @@ jobs:
       - name: setup buildx
         uses: actions/setup-buildx-action@v2
 
-  build_react:
+  pack_react:
     defaults:
       run:
         working-directory: react/interface
-    name: build_react
+    name: pack react
     runs-on: ubuntu-22.04
     steps:
       - name: checkout

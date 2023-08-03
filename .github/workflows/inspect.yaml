@@ -5,7 +5,7 @@ jobs:
         working-directory: dotnet/service
     env:
       NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
-    name: build_dotnet
+    name: build dotnet
     runs-on: ubuntu-22.04
     steps:
       - name: checkout
@@ -28,7 +28,7 @@ jobs:
     defaults:
       run:
         working-directory: node/service
-    name: build_node
+    name: build node
     runs-on: ubuntu-22.04
     steps:
       - name: checkout
@@ -49,7 +49,7 @@ jobs:
     defaults:
       run:
         working-directory: react/interface
-    name: build_react
+    name: build react
     runs-on: ubuntu-22.04
     steps:
       - name: checkout
