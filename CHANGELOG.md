@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning][semver].
 
 ### added
 
-- setup the repository directory structure
+- configure the repository automation pipeline
 
 ### changed
 
@@ -19,6 +19,13 @@ and this project adheres to [Semantic Versioning][semver].
 
 ### secured
 
+## [0.0.0] :: 2023-08-01
+
+### added
+
+- setup the repository directory structure
+
+[0.0.0]: https://github.com/fredbelotte/fredbelotte.github.io/commits/0.0.0
 [changelog]: https://keepachangelog.com/en/1.1.0/
 [semver]: https://semver.org/spec/v2.0.0.html
 [unreleased]: https://github.com/fredbelotte/fredbelotte.github.io
