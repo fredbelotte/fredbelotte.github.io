@@ -29,7 +29,10 @@ name: 'release'
 on:
   pull_request:
     branches:
-      - 'main'
+      - main
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
