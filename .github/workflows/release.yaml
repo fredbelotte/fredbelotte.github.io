@@ -1,0 +1,34 @@
+# release-workflow
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: configure
+        uses: actions/configure-pages@v5
+      - name: upload
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'docs'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    name: deploy
+    needs: build
+    runs-on: ubuntu-22.04
+    steps:
+      - id: deployment
+        name: deploy
+        uses: actions/deploy-pages@v4
+
+name: 'release'
+
+on:
+  pull_request:
+    branches:
+      - 'main'
