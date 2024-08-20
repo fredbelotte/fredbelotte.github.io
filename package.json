@@ -1,0 +1,12 @@
+{
+  "author": "fred belotte",
+  "license": "MIT",
+  "name": "fredbelotte.github.io",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "serve": "^14.2.3"
+  }
+}
